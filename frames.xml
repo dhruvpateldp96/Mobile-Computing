@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:measureAllChildren="false" >    
+    <SurfaceView
+        android:id="@+id/surface"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Result" />
+        
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Get depth" />
+
+
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/editText1"
+            android:text="Set Cam height" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_marginTop="105dp"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button7"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/button1"
+            android:text="Find Height" />
+
+        <Button
+            android:id="@+id/get_weight"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Get Weight"/>
+
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button7"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/button7"
+            android:text="Find length" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button4"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/button4"
+            android:text="Reset Val" />
+
+    <FrameLayout
+        android:id="@+id/cameraFrame"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="200dp">
+
+    </FrameLayout>
+    <ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="425dp"
+    android:src="@drawable/mark" />
+
+</RelativeLayout>

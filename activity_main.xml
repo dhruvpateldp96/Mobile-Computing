@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="100dp"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="100dp"
+        android:inputType="number"
+        android:text="Age" />
+
+    <RadioGroup
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="100dp">
+
+        <RadioButton
+        android:id="@+id/Male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male" />
+
+        <RadioButton
+        android:id="@+id/Female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="165dp"
+        android:text="Submit" />
+
+
+</RelativeLayout>
